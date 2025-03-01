@@ -1,0 +1,26 @@
+package practiceTest;
+
+import org.testng.annotations.Test;
+
+import aDomainname.appname.modulename.BaseClass;
+import co.cast.generic.BaseClass.creatNewOrganization;
+import co.cast.generic.BaseClass.createOrganization;
+
+
+
+public class invoiceTest  extends BaseClass{
+	
+	@Test 
+public void createContact() throws Exception {
+		createOrganization co=new createOrganization(driver);
+		co.createorg();
+
+		
+		String orgname=elib.getDataFromExcel("org", 1, 0) + jvlib.getRandomNumber();
+		
+		creatNewOrganization on=new creatNewOrganization(driver);
+		on.getorgname().sendKeys(orgname);
+		on.getsave().click();
+	}
+	
+}

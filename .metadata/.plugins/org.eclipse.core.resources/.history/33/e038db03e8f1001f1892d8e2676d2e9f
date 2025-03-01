@@ -1,0 +1,15 @@
+package com.casr.createContact;
+
+import org.testng.annotations.Test;
+
+import aDomainname.appname.modulename.BaseClass;
+
+public class crmContactsTest extends BaseClass {
+
+	@Test
+	public void createContact() {
+		
+		homeContact home=new homeContact(driver);
+		home.contact();
+	}
+}

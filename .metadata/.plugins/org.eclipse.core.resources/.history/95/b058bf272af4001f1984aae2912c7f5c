@@ -1,0 +1,17 @@
+package practiceTest;
+
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+
+import aDomainname.appname.modulename.base1f;
+
+@Listeners(com.comcast.crm.listnerutility.listener.class)
+public class trym  extends base1f {
+
+	@Test
+	public void activeSim() throws Exception {
+
+		System.out.println("execute create invoice test");
+
+	}
+}

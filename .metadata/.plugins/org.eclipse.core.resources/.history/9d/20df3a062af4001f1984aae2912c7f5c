@@ -1,0 +1,85 @@
+package com.comcast.crm.listnerutility;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Date;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.io.FileHandler;
+import org.testng.ISuite;
+import org.testng.ISuiteListener;
+import org.testng.ITestContext;
+import org.testng.ITestListener;
+import org.testng.ITestResult;
+
+import aDomainname.appname.modulename.BaseClass;
+
+public class listener implements ITestListener , ISuiteListener {
+
+	@Override
+	public void onStart(ISuite suite) {
+		
+		System.out.println(" on start =i suite");
+		System.out.println("===================");
+	}
+
+	@Override
+	public void onFinish(ISuite suite) {
+	System.out.println("on finish= i suite");
+	System.out.println("===================");
+
+	}
+
+	@Override
+	public void onTestStart(ITestResult result) {
+		System.out.println("on test start== i test result");
+		System.out.println("===================");
+
+		
+	}
+
+	@Override
+	public void onTestSuccess(ITestResult result) {
+		System.out.println("on test success= i test result");
+		System.out.println("===================");
+
+	}
+
+	@Override
+	public void onTestFailure(ITestResult result)  {
+		System.out.println("on test failure = i test result");
+		System.out.println("===================");
+
+
+		}
+
+	@Override
+	public void onTestSkipped(ITestResult result) {
+		System.out.println("on test skipped = i test result");
+		System.out.println("===================");
+
+	}
+
+	@Override
+	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+		System.out.println("on test failed but within success percentage ");
+		System.out.println("===================");
+
+	}
+
+	@Override
+	public void onStart(ITestContext context) {
+		System.out.println("on start = i test context");
+		System.out.println("===================");
+
+	}
+
+	@Override
+	public void onFinish(ITestContext context) {
+		System.out.println("on finish =i test context");
+		System.out.println("===================");
+
+	}
+
+}

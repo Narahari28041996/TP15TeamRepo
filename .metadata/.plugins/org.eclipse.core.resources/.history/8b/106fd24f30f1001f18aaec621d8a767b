@@ -1,0 +1,51 @@
+package domain.appname.modulebaseclass;
+
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+
+public class BaseClass {
+
+	@BeforeSuite
+	public void configBs() {
+		System.out.println("bs")	;
+		}
+	@BeforeClass
+	public void configBc() {
+		System.out.println("bs")	;
+
+	}
+	@BeforeMethod
+	public void configBm() {
+		System.out.println("bs")	;
+
+	}
+	@AfterMethod
+	public void configAm() {
+		System.out.println("bs")	;
+
+	}
+	@AfterClass
+	public void configAc() {
+		System.out.println("bs")	;
+
+	}
+	@AfterSuite
+	public void configAs() {
+		System.out.println("bs")	;
+
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

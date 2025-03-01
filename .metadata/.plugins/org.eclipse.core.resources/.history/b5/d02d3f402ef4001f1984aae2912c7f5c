@@ -1,0 +1,22 @@
+package practiceTest;
+
+import java.lang.reflect.Method;
+
+import org.testng.annotations.Test;
+
+
+
+public class trym   {
+
+	@Test
+	public void activeSim(Method mth) throws Exception {
+
+		System.out.println(mth);
+
+	}
+	@Test
+	public void real(Method mth) {
+		System.out.println(mth);
+		
+	}
+}

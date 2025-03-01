@@ -1,0 +1,47 @@
+package practiceTest;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+
+import com.comcast.crm.listnerutility.Login;
+
+import co.cast.generic.FileUtility.FileUtility;
+import co.cast.generic.WebDriverUtitlity.WebDriverUtility;
+
+public class trym {
+
+	@Test
+	public void teil() throws Exception {
+	WebDriverUtility wd=new WebDriverUtility();
+	FileUtility fu=new FileUtility();
+	WebDriver driver=new EdgeDriver();
+	wd.WaitForPageToLoad(driver);
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+String url=	fu.getDataFromPropertiesFile("url");
+String un=fu.getDataFromPropertiesFile("username");
+String pwd=fu.getDataFromPropertiesFile("password");
+
+
+	driver.get(url);
+//	driver.findElement(By.name("user_name")).sendKeys(un);
+//	driver.findElement(By.name("user_password")).sendKeys("admin");
+//	driver.findElement(By.id("submitButton")).click();
+	Login lo=new Login(driver);
+	lo.loginToApp(un, pwd);
+	
+	WebElement btn=driver.findElement(By.xpath("//img[@src='themes/softed/images/user.PNG']"));
+	Actions action =new Actions (driver);
+	action.moveToElement(btn).perform();
+	WebElement out=driver.findElement(By.linkText("Sign Out"));
+	out.click();
+	
+	
+	}
+}
+

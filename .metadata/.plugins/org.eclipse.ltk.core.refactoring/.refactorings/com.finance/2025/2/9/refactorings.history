@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;com.finance&apos;&#x0D;&#x0A;- Original project: &apos;com.finance&apos;&#x0D;&#x0A;- Original element: &apos;testng_features_basic.all.java&apos;" description="Delete element" element1="/src\/test\/java=/test=/true=/=/optional=/true=/=/maven.pomderived=/true=/&lt;testng_features_basic{all.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1740724452923" subPackages="false" version="1.0"/>
+</session>

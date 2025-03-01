@@ -1,0 +1,76 @@
+package practiceTest;
+
+import java.io.FileInputStream;
+import java.time.Duration;
+import java.util.Properties;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class hardcode {
+public static void main(String [] args) throws Throwable {
+	
+	WebDriver driver=new ChromeDriver();
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+	driver.manage().window().minimize();
+	driver.manage().window().maximize();
+	driver.manage().window().setPosition(new Point(400,400));
+	driver.manage().window().setSize(new Dimension(400,400));
+	
+	FileInputStream fis=new FileInputStream("C:\\Users\\Gurup\\eclipse-workspace\\com.cast\\ConfigAppData\\commondata.properties");
+	Properties po=new Properties();
+	po.load(fis);
+	String browser=po.getProperty("browser");
+String url=	po.getProperty("url");
+String un=	po.getProperty("username");
+String pwd=	po.getProperty("password");
+
+
+if(browser.equals("chrome")) {
+	driver=new ChromeDriver();
+}else if(browser.equals("firefox")) {
+	driver=new FirefoxDriver();
+}else if(browser.equals("edge")) {
+	driver=new EdgeDriver();
+}else {
+	driver=new ChromeDriver();
+}
+driver.get(url);
+
+driver.findElement(By.name("user_name")).sendKeys(un);
+driver.findElement(By.name("user_password")).sendKeys(pwd);
+driver.findElement(By.id("submitButton")).click();
+
+driver.findElement(By.xpath("//img[@title='Show World Clock...']")).click();
+
+WebElement clock=driver.findElement(By.name("clockcity"));
+
+Select sel=new Select(clock);
+sel.selectByVisibleText("Germany");
+
+driver.findElement(By.xpath("//img[@src='themes/images/close.gif']")).click();
+
+driver.findElement(By.xpath("//img[@src='themes/softed/images/btnL3Calc.gif']")).click();
+
+driver.findElement(By.className("calcGreyBtn")).click();
+
+driver.findElement(By.name("calc7")).click();
+
+driver.findElement(By.name("multiply")).click();
+
+
+
+
+
+
+	
+}
+}

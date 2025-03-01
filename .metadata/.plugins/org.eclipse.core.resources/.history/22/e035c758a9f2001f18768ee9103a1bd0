@@ -1,0 +1,18 @@
+package com.casr.createOrganization;
+
+import org.testng.annotations.Test;
+
+import com.comcast.crm.listnerutility.home;
+
+import aDomainname.appname.modulename.BaseClass;
+
+public class more_crm extends BaseClass{
+
+	
+	@Test
+	public void change() throws Throwable {
+		home ho=new home(driver);
+		ho.clickMorePriceBook();
+		
+	}
+}

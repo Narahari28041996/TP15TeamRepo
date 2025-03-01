@@ -1,0 +1,14 @@
+package practiceTest;
+
+import org.testng.annotations.Test;
+
+public class Practior {
+
+	@Test
+	public void  search() {
+		
+		
+		
+		
+}
+}

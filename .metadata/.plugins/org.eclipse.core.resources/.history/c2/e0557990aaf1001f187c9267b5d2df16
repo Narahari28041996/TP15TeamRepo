@@ -1,0 +1,41 @@
+package com.comcast.crm.listnerutility;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindAll;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class home {
+WebDriver driver=null;
+	public home(WebDriver driver){
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+	}
+		//navigate to contact module 
+		//driver.findElement(By.linkText("Contacts")).click();
+		
+
+		@FindBy(linkText="//img[@src='themes/softed/images/user.PNG']") private WebElement image;
+        @FindBy(linkText="Sign Out")private WebElement out;
+
+		public WebElement getImage() {
+			return image;
+		}
+
+		public WebElement getOut() {
+			return out;
+		}
+
+
+		public void logout(String url) {
+			driver.get(url);
+			
+			
+		}
+		
+		
+	}
+
+

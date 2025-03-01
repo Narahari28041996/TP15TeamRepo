@@ -1,0 +1,19 @@
+package practiceTest;
+
+import org.testng.annotations.Test;
+
+import aDomainname.appname.modulename.BaseClass;
+import co.cast.generic.BaseClass.createOrganization;
+
+
+
+public class invoiceTest  extends BaseClass{
+	@Test 
+public void createContact() {
+		createOrganization co=new createOrganization(driver);
+		co.createorg();
+//		co.gettext().click();
+//		co.getcreatebtn();
+	}
+	
+}

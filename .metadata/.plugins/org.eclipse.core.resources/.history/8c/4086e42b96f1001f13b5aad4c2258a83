@@ -1,0 +1,14 @@
+package practiceTest;
+
+import org.testng.annotations.Test;
+
+import aDomainname.appname.modulename.BaseClass;
+
+public class trym extends BaseClass{
+
+	@Test
+	public void teil() throws Exception {
+	
+	}
+}
+

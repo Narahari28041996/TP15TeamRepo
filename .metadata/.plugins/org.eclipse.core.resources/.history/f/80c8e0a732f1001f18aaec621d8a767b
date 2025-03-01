@@ -1,0 +1,32 @@
+package practiceTest;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.Test;
+
+import co.cast.generic.BaseClass.Login;
+import co.cast.generic.FileUtility.FileUtility;
+import co.cast.generic.WebDriverUtitlity.WebDriverUtility;
+
+public class test {
+	
+FileUtility fu=new FileUtility();
+WebDriverUtility wb=new WebDriverUtility();
+
+
+public static void main(String [] args) throws Exception {
+	FileUtility fu=new FileUtility();
+	WebDriverUtility wb=new WebDriverUtility();
+	WebDriver driver = null;
+//	@Test
+//	public void fresh() throws Exception {
+	String browser=	fu.getDataFromPropertiesFile("browser");
+String url=	fu.getDataFromPropertiesFile("url");
+String un=	fu.getDataFromPropertiesFile("username");
+String pwd=	fu.getDataFromPropertiesFile("password");
+
+	     wb.WaitForPageToLoad(driver);
+	driver.get("http://localhost:8888/");
+	
+	}
+}

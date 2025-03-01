@@ -1,0 +1,15 @@
+package practiceTest;
+
+import java.io.FileInputStream;
+
+import org.json.simple.parser.JSONParser;
+import org.testng.annotations.Test;
+
+public class dataprovider {
+
+	public static void main(String [] args) {
+		FileInputStream fis=new FileInputStream("C:\\Users\\Gurup\\OneDrive\\Desktop\\file.json");
+		JSONParser par=new JSONParser();
+	Object obj=	par.parse(fis);
+	}
+	}

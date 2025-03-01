@@ -1,0 +1,27 @@
+package practiceTest;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.comcast.crm.listnerutility.Login;
+
+import co.cast.generic.FileUtility.FileUtility;
+
+public class js {
+public static void main(String [] args) throws Exception {
+	FileUtility fu=new FileUtility();
+	WebDriver driver=new ChromeDriver();
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+String url=	fu.getDataFromPropertiesFile("url");
+String un=fu.getDataFromPropertiesFile("username");
+String pwd=fu.getDataFromPropertiesFile("password");
+	driver.get(url);
+	
+	Login lo=new Login(driver);
+	lo.loginToApp(un, pwd);
+	
+	
+}
+}

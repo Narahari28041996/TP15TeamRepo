@@ -1,0 +1,15 @@
+package practiceTest;
+
+import org.testng.annotations.Test;
+
+import aDomainname.appname.modulename.BaseClass;
+
+
+
+public class invoiceTest  extends BaseClass{
+	@Test 
+public void createContact() {
+		
+	}
+	
+}

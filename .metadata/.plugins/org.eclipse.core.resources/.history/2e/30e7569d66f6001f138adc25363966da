@@ -1,0 +1,21 @@
+package product;
+
+import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
+public class product {
+
+	
+	ExtentSparkReporter spark=new ExtentSparkReporter("");
+	ExtentRepor report=new ExtentReporters(spark);
+	
+	@Test
+	public void confidk() {
+		spark.config().setDocumentTitle("TitleName");
+		spark.config().setReportName("reportName");
+		spark.config().setTheme();
+		
+		// 
+	}
+}

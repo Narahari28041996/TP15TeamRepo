@@ -1,0 +1,79 @@
+package com.comcast.crm.listnerutility;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Date;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.io.FileHandler;
+import org.testng.ISuite;
+import org.testng.ISuiteListener;
+import org.testng.ITestContext;
+import org.testng.ITestListener;
+import org.testng.ITestResult;
+
+import aDomainname.appname.modulename.BaseClass;
+
+public class listener implements ITestListener , ISuiteListener {
+
+	@Override
+	public void onStart(ISuite suite) {
+		System.out.println("==report configuratioin ==");
+	}
+
+	@Override
+	public void onFinish(ISuite suite) {
+		System.out.println("==report backup==");
+	}
+
+	@Override
+	public void onTestStart(ITestResult result) {
+		
+	}
+
+	@Override
+	public void onTestSuccess(ITestResult result) {
+		System.out.println(result.getMethod().getMethodName()+"dd");
+
+	}
+
+	@Override
+	public void onTestFailure(ITestResult result)  {
+		
+		
+String methodname=result.getMethod().getMethodName();
+String time= new Date().toString();
+TakesScreenshot ts=(TakesScreenshot)(BaseClass.sdriver);
+          File src= ts.getScreenshotAs(OutputType.FILE);
+          File des=new File("C:\\Users\\Gurup\\eclipse-workspace\\com.cast\\screenshot\\"+methodname+"+"+time+".png");
+          try {
+			FileHandler.copy(src, des);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+
+	}
+
+	@Override
+	public void onTestSkipped(ITestResult result) {
+		
+	}
+
+	@Override
+	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+		
+	}
+
+	@Override
+	public void onStart(ITestContext context) {
+		
+	}
+
+	@Override
+	public void onFinish(ITestContext context) {
+		
+	}
+
+}

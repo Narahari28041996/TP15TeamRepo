@@ -1,0 +1,25 @@
+package practiceTest;
+
+import org.testng.annotations.Test;
+
+import com.comcast.crm.listnerutility.BaseClass;
+
+import co.cast.generic.BaseClass.Login;
+
+/**
+ * test class for contact module
+ * @author Gurup 
+ */
+public class searchContactTest extends BaseClass {
+/**
+ * scen : login()===>navigate contact==>create contact()==verify
+ */
+	@Test 
+	public void searchcontactTest() {	 
+	 /*step 1 : login to app*/
+   Login lp=new Login(driver);
+   lp.loginToApp("admin", "admin");
+   
+   
+	}
+}

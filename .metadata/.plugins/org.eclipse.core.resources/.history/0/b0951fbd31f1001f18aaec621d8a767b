@@ -1,0 +1,18 @@
+package practiceTest;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.Test;
+
+import co.cast.generic.BaseClass.Login;
+import co.cast.generic.FileUtility.FileUtility;
+
+public class test {
+FileUtility fu=new FileUtility();
+
+	@Test
+	public void fresh() throws Exception {
+	String browser=	fu.getDataFromPropertiesFile("browser");
+	
+	}
+}
