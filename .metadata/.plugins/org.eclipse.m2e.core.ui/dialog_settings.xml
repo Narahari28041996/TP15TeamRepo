@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Gurup\git\Automation_TL\com.cast"/>
 			<item value="C:\Users\Gurup\eclipse-workspace\NEW"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -26,13 +27,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.con.com.cat"/>
 		</list>
 		<list key="groupId">
-			<item value="com.con"/>
 		</list>
 		<list key="artifactId">
-			<item value="com.cat"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -48,10 +46,14 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="organizationName"/>
+			<item value="SeleniumProject"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="TollOrProjectName"/>
+			<item value="SeleniumProject"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
