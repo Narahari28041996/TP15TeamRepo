@@ -1798,3 +1798,6 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag nam
 
 !ENTRY org.eclipse.egit.ui 4 0 2025-03-04 17:27:38.259
 !MESSAGE Can't connect to any repository: 
+
+!ENTRY org.eclipse.egit.ui 4 0 2025-03-04 17:27:52.193
+!MESSAGE Can't connect to any repository: 
