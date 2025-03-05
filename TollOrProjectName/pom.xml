@@ -5,7 +5,9 @@
   <artifactId>ToolOrProjectName</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
-  
+  <profiles>
+  <profile>
+  <id>ONE</id>
 			<build>
 				<plugins>
 					<plugin>
@@ -14,7 +16,7 @@
 						<version>2.18.1</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>testng.xml</suiteXmlFile>
+								<suiteXmlFile>oneTestCase.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -22,6 +24,8 @@
 
 				</plugins>
 			</build>
+  </profile>
+  </profiles>
 
   
   <dependencies>

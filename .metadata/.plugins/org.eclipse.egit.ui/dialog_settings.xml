@@ -7,12 +7,15 @@
 		<item value="github.com"/>
 	</list>
 	<list key="CommitDialog.authorValues">
+		<item value="guruK7112 &lt;guruprasad0733@gmail.com&gt;"/>
 		<item value="Gurup &lt;Gurup@GURUKIRAN&gt;"/>
 	</list>
 	<list key="CommitDialog.committerValues">
+		<item value="guruK7112 &lt;guruprasad0733@gmail.com&gt;"/>
 		<item value="Gurup &lt;Gurup@GURUKIRAN&gt;"/>
 	</list>
 	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/guruk7112/framework_Rep.git"/>
 		<item value="https://github.com/guruk7112/ComcastFrameworkRepo.git"/>
 	</list>
 	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
