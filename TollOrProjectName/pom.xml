@@ -7,7 +7,7 @@
   
   <profiles>
   <profile>
-  <id>ONE</id>
+  <id>RT</id>
 			<build>
 				<plugins>
 					<plugin>
