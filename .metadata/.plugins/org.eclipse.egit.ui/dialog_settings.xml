@@ -2,8 +2,8 @@
 <section name="Workbench">
 	<item key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel" value="0"/>
 	<list key="EGit.KnownHosts">
-		<item value="bitbucket.org"/>
 		<item value="git.eclipse.org"/>
+		<item value="bitbucket.org"/>
 		<item value="github.com"/>
 	</list>
 	<list key="CommitDialog.authorValues">
@@ -15,6 +15,10 @@
 		<item value="Gurup &lt;Gurup@GURUKIRAN&gt;"/>
 	</list>
 	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/Narahari28041996/TP15TeamRepo.git"/>
+		<item value="https://github.com/guruk7112/TekParts.git"/>
+		<item value="https://github.com/Narahari28041996/ComcastCRMGUIRepo.git"/>
+		<item value="https://github.com/guruk7112/tekParts.git"/>
 		<item value="https://github.com/guruk7112/framework_Rep.git"/>
 		<item value="https://github.com/guruk7112/ComcastFrameworkRepo.git"/>
 	</list>
@@ -36,6 +40,19 @@
 			<item value=""/>
 		</list>
 		<list key="C:\Users\Gurup\git\ComcastFrameworkRepo\ComcastFrameworkRepo\ComcastFrameworkRepo\ComcastFrameworkRepo\ComcastFrameworkRepo\.git">
+			<item value="empty"/>
+		</list>
+		<list key="C:\Users\Gurup\git\ComcastCRMGUIRepo\.git">
+			<item value="false"/>
+			<item value="guruK7112 &lt;guruprasad0733@gmail.com&gt;"/>
+			<item value="Merge branch &apos;master&apos; of https://github.com/Narahari28041996/ComcastCRMGUIRepo.git"/>
+			<item value="guruK7112 &lt;guruprasad0733@gmail.com&gt;"/>
+			<item value="44e8f7b8aeef3445379815dda4246658fbe2ce55"/>
+			<item value="0"/>
+			<item value="false"/>
+			<item value=""/>
+		</list>
+		<list key="C:\Users\Gurup\git\TP15TeamRepo\.git">
 			<item value="empty"/>
 		</list>
 	</section>
@@ -60,11 +77,41 @@
 	<section name="GitImportWizard">
 		<item key="GitProjectsImportPage.STORE_NESTED_PROJECTS" value="true"/>
 		<section name="GitImportWizard.dialogBounds">
-			<item key="DIALOG_X_ORIGIN" value="619"/>
+			<item key="DIALOG_X_ORIGIN" value="589"/>
 			<item key="DIALOG_Y_ORIGIN" value="142"/>
-			<item key="DIALOG_WIDTH" value="1169"/>
+			<item key="DIALOG_WIDTH" value="1340"/>
 			<item key="DIALOG_HEIGHT" value="627"/>
 			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 		</section>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.dialogs.MergeTargetSelectionDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="619"/>
+		<item key="DIALOG_Y_ORIGIN" value="13"/>
+		<item key="DIALOG_WIDTH" value="700"/>
+		<item key="DIALOG_HEIGHT" value="760"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.fetch.FetchResultDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="610"/>
+		<item key="DIALOG_Y_ORIGIN" value="187"/>
+		<item key="DIALOG_WIDTH" value="700"/>
+		<item key="DIALOG_HEIGHT" value="498"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="FetchGerritChangePage">
+	</section>
+	<section name="org.eclipse.egit.ui.internal.dialogs.BranchEditDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="0"/>
+		<item key="DIALOG_Y_ORIGIN" value="-105"/>
+		<item key="DIALOG_WIDTH" value="700"/>
+		<item key="DIALOG_HEIGHT" value="534"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.merge.MergeResultDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="705"/>
+		<item key="DIALOG_Y_ORIGIN" value="339"/>
+		<item key="DIALOG_WIDTH" value="529"/>
+		<item key="DIALOG_HEIGHT" value="271"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 </section>

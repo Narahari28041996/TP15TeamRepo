@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Gurup\git\ComcastFrameworkRepo\ComcastFrameworkRepo\ComcastFrameworkRepo\ComcastFrameworkRepo\ComcastFrameworkRepo\com.finance"/>
 			<item value="C:\Users\Gurup\git\Automation_TL\com.cast"/>
 			<item value="C:\Users\Gurup\eclipse-workspace\NEW"/>
 		</list>
@@ -46,14 +47,14 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="demo"/>
 			<item value="organizationName"/>
-			<item value="SeleniumProject"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="TollOrProjectName"/>
-			<item value="SeleniumProject"/>
+			<item value="project"/>
+			<item value="ToolOrProjectName"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -70,5 +71,17 @@
 	<section name="org.eclipse.m2e.core.pom.overview">
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
 	</section>
 </section>

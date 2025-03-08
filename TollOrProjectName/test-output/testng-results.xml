@@ -2,30 +2,16 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-04T09:49:42 IST" name="Default suite" finished-at="2025-03-04T09:49:42 IST" duration-ms="97">
+  <suite started-at="2025-03-08T04:42:36Z" name="Default suite" finished-at="2025-03-08T04:42:36Z" duration-ms="72">
     <groups>
     </groups>
-    <test started-at="2025-03-04T09:49:42 IST" name="Default test" finished-at="2025-03-04T09:49:42 IST" duration-ms="97">
+    <test started-at="2025-03-08T04:42:36Z" name="Default test" finished-at="2025-03-08T04:42:36Z" duration-ms="72">
       <class name="pac2.orgTest">
-        <test-method signature="createOrgTest(java.lang.reflect.Method)[pri:0, instance:pac2.orgTest@2d3379b4]" started-at="2025-03-04T09:49:42 IST" name="createOrgTest" finished-at="2025-03-04T09:49:42 IST" duration-ms="15" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void pac2.orgTest.createOrgTest(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="createOrgTest()[pri:0, instance:pac2.orgTest@433defed]" started-at="2025-03-08T04:42:36Z" name="createOrgTest" finished-at="2025-03-08T04:42:36Z" duration-ms="26" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createOrgTest -->
-        <test-method signature="modifyOrgtTest(java.lang.reflect.Method)[pri:0, instance:pac2.orgTest@2d3379b4]" started-at="2025-03-04T09:49:42 IST" name="modifyOrgtTest" finished-at="2025-03-04T09:49:42 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void pac2.orgTest.modifyOrgtTest(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="modifyOrgtTest()[pri:0, instance:pac2.orgTest@433defed]" started-at="2025-03-08T04:42:36Z" name="modifyOrgtTest" finished-at="2025-03-08T04:42:36Z" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- modifyOrgtTest -->
